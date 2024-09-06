@@ -1,0 +1,120 @@
+body{
+    background: -moz-linear-gradient(top, #1f1b0b, #cac7c5);
+    background: linear-gradient(to bottom,#E0F7FA, #00BCD4);
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    font-family:Arial, Helvetica, sans-serif
+}
+div{
+    text-align:left;
+    padding-left: 20px;
+
+    background-color: #ffffff;
+    height: 450px;
+    border-radius: 0.7cm;
+    width: 20%;
+    margin-top: 12%;
+    margin-bottom: 12%;
+    margin-left: 40%;
+    margin-right: 50%;
+    padding-top: 60px;
+    background: -moz-linear-gradient(top, );
+    box-shadow: 0cm -0.25cm 50000cm 0.78cm  #a694fa;
+    border: solid #696969;
+
+   
+}
+
+.entrar{
+    background: -moz-linear-gradient(top, #1f1b0b, #cac7c5);
+    background: linear-gradient(to bottom, #2949da, #7993cab2);  
+    margin-top: 50px;
+    margin-left:40px;
+    text-align: center;
+    height: 56px;
+    width: 7cm;
+    display: block;
+    border-radius:8px;
+    font-size: 20px;
+    color: aliceblue;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-shadow:0cm 0cm 0.2cm 0cm #948b69;
+}
+
+
+.username{
+    background-color:transparent;
+    color: #000000;
+    opacity: 50%;
+    width: 340px;
+    font-size: 100%;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 0.2cm;
+
+}
+
+.Logotipo{
+    width: 120px;
+    margin: auto;
+    margin-left: 110px;
+}
+
+h1{
+    text-align: center;
+    font-size: 2cm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:midnightblue
+}
+
+.password{
+    background-color:transparent;
+    color: #000000;
+    opacity: 50%;
+    width: 340px;
+    font-size: 100%;
+    height: 50px;
+    border-radius: 8px;
+    margin-bottom: 0%;
+}
+
+h2{
+    text-align: center;
+    margin-right: 1.5cm;
+    margin-left: 20px;
+}
+
+.confirm{  padding: 10px 20px;
+    width: 5cm;
+    font-size: 12px;
+    font-weight: bold;
+    color: #1889f3;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    transition: font-size 0.3s ease-in-out;
+    float: left;
+    margin-left: 5.3cm;
+
+    }
+.confirm:hover{
+    font-size:12.1px ;
+}
+
+label{
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 250px;
+}
+.anony{
+    width: 0.5cm;
+    margin-left: 2px;
+}
+.cadeado{
+    width: 0.5cm;
+    margin-top: 0.5cm;
+}
