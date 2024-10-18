@@ -1,20 +1,26 @@
-let input = parseInt(document.getElementById("tamanho").value)
-let button  = document.getElementById("buttongerar")
-let resultado = document.getElementById("resultado")
-const alfa = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%¨&*()+"
-let senha = undefined
-let nov_senha = " "  
-const p  = document.createElement("p")
-button.addEventListener("click",function(){
-    let pass = "";
-    for(let i = 0;i++;i <= input){
-        pass += alfa.charAt(Math.floor(Math.random() * alfa.length));
+let button  = document.getElementById("buttongerar");
+let resultado = document.getElementById("resultado");
+const alfa = "abcdefghijklmnopqrstuvwxyz1234567890!@#$%¨&*()+";
+
+button.addEventListener("click", function() {
+    let tamanho = parseInt(document.getElementById("tamanho").value);
+    let senha = '';  // Reseta a senha sempre que o botão for clicado
+
+    // Gera a senha
+    for (let i = 0; i < tamanho; i++) {
+        const randomIndex = Math.floor(Math.random() * alfa.length);
+        senha += alfa[randomIndex];
     }
-    p.innerHTML = pass
-    resultado.appendChild(p)
-    console.log(p)
-})
-function copyPassord(){
-    alert("Senha copiada com sucesso")
-    navigator.clipboard.writeText(nov_Senha);
-}
+    if( isNaN(tamanho) || tamanho <= 0){
+        outrop = document.createElement("p")
+        outrop.setAttribute("id","erro")
+        document.getElementById("gerador-senha").appendChild(outrop)
+        outrop.innerText = "Insira um número válido"
+    }
+
+    // Cria o parágrafo apenas uma vez
+    resultado.innerHTML = '';  // Limpa o resultado anterior
+    const p = document.createElement("p");
+    p.innerText = senha;
+    resultado.appendChild(p);
+});

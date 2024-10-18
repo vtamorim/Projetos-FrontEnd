@@ -1,0 +1,98 @@
+body{
+    background-color: rgb(1, 26, 95);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#gerador-senha{
+    background-color: rgb(3, 16, 54);
+    width: 25em;
+    height: 30em;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+div h1{
+    text-align: center;
+}
+
+.btn {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    font-size: 17px;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+    background: transparent;
+    position: relative;
+    left: 6em;
+    top: 5em;
+    transition: all 1s;
+    overflow: hidden;
+  }
+  
+  .btn:hover {
+    color: rgb(1, 26, 95);
+  }
+  
+  .btn::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    top: 0;
+    left: -40px;
+    transform: skewX(45deg);
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: all 1s;
+  }
+  
+  .btn:hover::before {
+    width: 160%;
+  }
+  
+input{
+    width: 28em;
+    position: relative;
+    left: 0.5em;
+    outline: none;
+    background-color: transparent;
+    border: 0;
+    color: white;
+    border: 1px solid white;
+    height: 4em;
+    padding-left: 10px;
+    border-radius: 10px;
+}
+input::placeholder{
+    color: white;
+
+}
+label{
+    position: relative;
+    top: 7em;
+    left: 1em;
+}
+#resultado{
+    background-color: rgb(11, 30, 85);
+    height: 7em;
+    padding-left: 15px;
+    overflow: scroll;
+    position: absolute;
+    top: 20em;
+    width: 22em;
+    left: 1em;
+    border-radius: 10px;
+    }
+#erro{
+    font-size: 12px;
+    color: white;
+    position: absolute;
+    top: 11em;
+    left: 1.5em;
+    text-decoration: underline;
+}
