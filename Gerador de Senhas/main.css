@@ -79,12 +79,12 @@ label{
 }
 #resultado{
     background-color: rgb(11, 30, 85);
-    height: 7em;
+    height: 9em;
+    color: white;
     padding-left: 15px;
-    overflow: scroll;
     position: absolute;
-    top: 20em;
-    width: 22em;
+    top: 25em;
+    width: 26.5em;
     left: 1em;
     border-radius: 10px;
     }

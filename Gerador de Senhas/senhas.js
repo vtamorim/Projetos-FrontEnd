@@ -20,7 +20,6 @@ button.addEventListener("click", function() {
 
     // Cria o parágrafo apenas uma vez
     resultado.innerHTML = '';  // Limpa o resultado anterior
-    const p = document.createElement("p");
-    p.innerText = senha;
+    resultado.innerText = senha
     resultado.appendChild(p);
 });
