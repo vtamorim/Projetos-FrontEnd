@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Merri';
+    src: url('../fonts/font_merri.ttf');
+}
+
+:root{
+    --cor-principal: #35BDC3;
+    --footer-color:#2D3239;
+    --cor-hover:#ffff;
+}
