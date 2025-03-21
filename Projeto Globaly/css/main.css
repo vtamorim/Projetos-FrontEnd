@@ -93,7 +93,7 @@ header>form>button{
     top: 2px;
     background-color: var(--footer-color);
     border: none;
-    height: 2.4em;
+    height: 2em;
 }
 
 header>form>button>img{
@@ -123,12 +123,12 @@ header>form>button>img{
 #section_body button{
     border: none;
     background-color: var(--cor-principal);
-    width: 13em;
-    height: 4em;
+    width: var(--width--button);
+    height: var(--height--button);
     font-weight: 800;
     position: relative;
     top: 5em;
-    border-radius: 50px;
+    border-radius: var(--radius--button);
     color: white;
     transition: background-color 0.2s ease-in;
 }
@@ -138,7 +138,7 @@ header>form>button>img{
 }
 main section:nth-child(1){
     background-color:white;
-    height: 40em;
+    height: 50em;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -197,16 +197,396 @@ main section:nth-child(1) ul p{
 main section:nth-child(1) button{
     border: none;
     background-color: var(--cor-principal);
-    width: 13em;
-    height: 6em;
+    width: var(--width--button);
+    height: var(--height--button);
     bottom: 9em;
     font-weight: 800;
     position: relative;
-    border-radius: 50px;
+    border-radius: var(--width--button);
     color: white;
     transition: background-color 0.2s ease-in;
 }
 main section:nth-child(1) button:hover{
     background-color: var(--footer-color);
     color: white;
+}
+main section:nth-child(2){
+    display: flex;
+    color: white;
+    
+}
+
+main section:nth-child(2) > div{
+    padding: 100px 35px 75px 35px;
+    width: 50%;
+    background-image: url(../images/backgroundmono.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+main section:nth-child(2) > div > h2{
+    font-size: 4em;
+    margin-bottom: 5%;
+
+}
+main section:nth-child(2) > div > span{
+    font-size: 1.6em;
+    margin-top: 5%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+main section:nth-child(2) > div > p{
+    font-family: 'Merri';
+    margin-top: 5%;
+}
+main section:nth-child(2) > img{
+    width: 50%;
+}
+main section:nth-child(2) button{
+    border: none;
+    color: white;
+    font-weight: 800;
+    position: relative;
+    top: 15%;
+    border: 1px solid white;
+    background-color: transparent;
+    height: var(--height--button);
+    width: var(--width--button);
+    border-radius: var(--radius--button);
+    transition: background-color 0.2s ease-in;
+}
+main section:nth-child(2) button:hover{
+    background-color: white;
+    color: var(--footer-color);
+}
+main section:nth-child(3){
+    position: relative;
+    margin-top: 3em;
+}
+main section:nth-child(3)>h2{
+    text-align: center;
+    font-size: 4.13em;
+
+}
+main section:nth-child(3)> h4{
+    text-align: center;
+    font-family: 'Merri';
+    font-size: 2.15em;
+}
+main section:nth-child(3)>hr{
+    width: 5em;
+    margin: auto;
+}
+main section:nth-child(3)>div{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    margin-top: 5em;
+    justify-content: space-around;
+
+}
+main section:nth-child(3)>div>div{
+    
+    width: 32em;
+    
+}
+main section:nth-child(3)>div>div>div{
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+main section:nth-child(3) a{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+
+}
+
+main section:nth-child(3) img{
+    width: 32em;
+    height: 20em;
+}
+em{
+    color: var(--cor-principal);
+    font-weight: bold;
+}
+main section:nth-child(3) p {
+    margin-top: 1em;
+    color: gray;
+    font-family: 'Merri';
+    font-size: 0.9em;
+}
+main section:nth-child(3) button{
+    border: none;
+    height: var(--height--button);
+    width: var(--width--button);
+    border-radius: var(--radius--button);
+    background-color: var(--cor-principal);
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: white;
+    font-weight: 800;
+    transition: background-color 0.2s ease-in;
+
+}
+main section:nth-child(3) button:hover{
+    background-color: var(--footer-color);
+    color: white;
+}
+main section:nth-child(4){
+    margin-top: 3em;
+    padding-top: 3em;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url('../images/backgroundmono.jpg');
+    height: 65vh;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+main section:nth-child(4) hr{
+    width: 5em;
+    height: 2px;
+    position: relative;
+    top: 1em;
+    background-color: white;
+}
+main section:nth-child(4) h2{
+    font-size: 3.3em;
+}
+main section:nth-child(4) h4{
+    font-size: 2em;
+}
+main section:nth-child(4) ul{
+    display: flex;
+    width: 100%;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+}
+main section:nth-child(4) ul li{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section:nth-child(4) ul>li>div{
+    font-size: 5em;
+    position: relative;
+    top: 1em;
+    background-color: transparent;
+    border: 2px solid white;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main section:nth-child(4) ul>li>span{
+    font-size: 2em;
+    position: relative;
+    top: 3em;
+}
+main section:nth-child(5){
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 40em;
+    padding-top: 50px;
+    align-items: center;
+}
+main section:nth-child(5) h2{
+    font-size: 4.3em;
+}
+main section:nth-child(5) h4{
+    font-size: 2.15em;
+    font-family: 'Merri';
+}
+main section:nth-child(5) hr{
+    width: 5em;
+    height: 2px;
+    position: relative;
+    border: 0;
+    top: 1em;
+    background-color:   lightgray;
+    
+}
+main section:nth-child(5) p{
+    font-family: 'Merri';
+    text-align: left;
+    width: 85%;
+    color: rgb(148, 148, 148);
+}
+main section:nth-child(5)>div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 5em;
+}
+main section:nth-child(5)>div>div{
+    display: flex;
+    width: 45%;
+}
+main section:nth-child(5)>div>div>div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main section:nth-child(5) span{
+    margin-top: 10px;
+    font-size: 1.3em;
+    width: 85%;
+    font-weight: bold;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main section:nth-child(5) img{
+    width: 12em;
+    border-radius: 50%;
+}
+main section:nth-child(6){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 30em;
+    width: 100%;
+    background-image: url(../images/3409297.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+main section:nth-child(6) h2{
+    font-size: 4.3em;
+}
+main section:nth-child(6) h4{
+    font-size: 2.15em;
+}
+main section:nth-child(6) button {
+    border: 2px solid white;
+    background-color: transparent;
+    width: var(--width--button);
+    height: var(--height--button);
+    font-weight: 800;
+    position: relative;
+    top: 5em;
+    border-radius: var(--radius--button);
+    color: white;
+    transition: background-color 0.2s ease-in;
+}
+main section:nth-child(6) button:hover{
+    background-color: white;
+    color: var(--footer-color);
+}
+main>h2 {
+    font-size: 2.3em;
+    text-align: center;
+    font-family: "Merri";
+    margin-top: 3em;
+}
+main>h4{
+    font-size: 3.5em;
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+
+    color: var(--cor-principal);
+}
+main>hr{
+    margin: auto;
+    width: 5em;
+    height: 2px;
+    position: relative;
+    border: 0;
+    top: 1em;
+    background-color:   lightgray;
+}
+main form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0em;
+    height: 38em;
+}
+main form label{
+    font-size: 1.2em;
+    font-family: 'Merri';
+}
+main form select{
+    border: none;
+    width: 37%;
+    height: 3em;
+    padding-left: 0.6%;
+    margin-top: 1em;
+    font-family: 'Merri';
+    font-size: 1em;
+    color: gray;
+    
+    transition:  background-color 0.2s ease-in;
+}
+main form select:focus{
+    border: none;
+    outline: none;
+}
+main form select:hover{
+    background-color: rgb(219, 219, 219);
+}
+main form input{
+    border: none;
+    width: 35%;
+    height: 2em;
+    margin-top: 1em;
+    font-family: 'Merri';
+    font-size: 1em;
+}
+main form input::placeholder{
+    color: gray;
+    text-transform:lowercase;
+}
+main form input:focus{
+    border: none;
+    outline: none;
+}
+main form button{
+    border: none;
+    text-transform: uppercase;
+    background-color: var(--cor-principal);
+    width: var(--width--button);
+    height: var(--height--button);
+    font-weight: 800;
+    position: relative;
+    top: 5em;
+    border-radius: var(--radius--button);
+    color: white;
+    transition: background-color 0.2s ease-in;
+}
+main form button:hover{
+    background-color: var(--footer-color);
+    color: white;
+}
+footer{
+    width: 100%;
+    display: flex;
+    font-size: 0.9em;
+    font-family: "Merri";
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
+    height: 15em;
+    background-color: var(--footer-color);
+    color: white;
+}
+footer a{
+    color: white;
+}
+footer a:focus{
+    color: var(--cor-principal);
+}
+footer span{
+    font-family: 'Merri';
 }
