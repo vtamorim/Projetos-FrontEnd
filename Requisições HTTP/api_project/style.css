@@ -1,0 +1,229 @@
+
+
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  background-color: rgb(0, 0, 29);
+
+}
+header{
+  background-color:white;
+
+  width: 100%;
+  height: 5em;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-bottom-left-radius: 1.5em;
+  border-bottom-right-radius: 1.5em;
+}
+main{
+  width: 100%;
+  height: 55em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+h1{
+  color: rgb(0, 0, 29);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2.3em;
+}
+form{
+  background-color: white;
+  width: 20%;
+  height: 50%;
+  border-radius: 10px;
+  padding: 15px;
+}
+h2{
+  text-align: center;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+form input{
+  width: 100%;
+  height: 3.5em;
+  border: 1px solid black;
+  outline: none;
+  border-radius: 5em;
+  padding-left: 5em;
+  box-sizing: border-box;
+}
+form div{
+  background-color: rgb(0, 0, 29);
+  width: 3em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.9em;
+  border-radius: 50%;
+  position: relative;
+  top: 2.9em;
+}
+form input:focus{
+  outline: none;
+
+}
+button {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #18181a;
+  color: #18181a;
+  border-radius: 5em;
+  font-size: 15px;
+  line-height: 15px;
+  padding: 18px 18px 17px;
+  width: 90%;
+  margin-left: 0%;
+  margin-top: 4em;
+  display: block;
+  margin: 4em auto;
+
+  text-decoration: none;
+  cursor: pointer;
+  background: #fff;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+ }
+ 
+ button span:first-child {
+  position: relative;
+  transition: color 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 10;
+ }
+ 
+ button span:last-child {
+  color: white;
+  display: block;
+  position: absolute;
+  bottom: 0;
+  transition: all 500ms cubic-bezier(0.48, 0, 0.12, 1);
+  z-index: 100;
+  opacity: 0;
+  top: 50%;
+  left: 50%;
+  transform: translateY(225%) translateX(-50%);
+  height: 14px;
+  line-height: 13px;
+ }
+ 
+ button:after {
+  content: "";
+  position: absolute;
+  bottom: -50%;
+  left: 0;
+  width: 100%;
+  height: 5em;
+  background-color: rgb(0, 0, 29);
+  transform-origin: bottom center;
+  transition: transform 600ms cubic-bezier(0.48, 0, 0.12, 1);
+  transform: skewY(9.1deg) scaleY(0);
+  z-index: 50;
+ }
+ 
+ button:hover:after {
+  transform-origin: bottom center;
+  transform: skewY(9.3deg) scaleY(4);
+ }
+ 
+ button:hover span:last-child {
+  transform: translateX(-50%) translateY(-50%);
+  opacity: 1;
+  transition: all 900ms cubic-bezier(0.48, 0, 0.12, 1);
+ }
+main>div{
+  position: relative;
+  top: 5em;
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  
+}
+ main > div> h2{
+  color: white;
+  font-size: 2.5em;
+ }
+
+ main>div> ul{
+  list-style-type: none;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  justify-items: center;
+  width: 100%;
+  
+ }
+ main>div>ul>li{
+  position: relative;
+  width: 190px;
+  height: 254px;
+  background-color: rgb(0, 32, 54);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 12px;
+  gap: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  color: white;
+ }
+ li::before{
+  content: '';
+  position: absolute;
+  inset: 0;
+  left: -5px;
+  margin: auto;
+  width: 200px;
+  height: 264px;
+  border-radius: 10px;
+  background: linear-gradient(-45deg, #3b0641 0%, #0f2f3b 100% );
+  z-index: -10;
+  pointer-events: none;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+
+ li::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(-45deg, #4d004e 0%, #003738 100% );
+  transform: translate3d(0, 0, 0) scale(0.95);
+  filter: blur(20px);
+ }
+ .heading{
+  font-size: 20px;
+  text-transform: capitalize;
+  font-weight: 700;
+ }
+ li span:not(.heading) {
+  font-size: 14px;
+}
+li span:last-child {
+  color: #f59bff;
+  font-weight: 600;
+}
+ li:hover::after {
+  filter: blur(30px);
+}
+
+li:hover::before {
+  transform: rotate(-90deg) scaleX(1.34) scaleY(0.77);
+}
+ul p {
+background-color: white;
+position: relative;
+left: 50%;
+}
