@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <h1>Listagem de Jogos</h1>
+  </header>
+  <main>
+    <form id="gameform">
+      <h2>Inserir Dados de Jogos</h2>
+      <div>
+        <img src="../api_project/control.svg" alt="control icon">
+      </div>
+      <input type="text" id="title_game" placeholder="Nome do Jogo" required>
+      <div>
+        <img src="../api_project/note.svg" alt="note icon">
+      </div>
+      <input type="text" id="desc_game" placeholder="Descrição do Jogo" required>
+      <div>
+        <img src="../api_project/star.svg" alt="star icon">
+      </div>
+      <input type="number" id="rating_game" placeholder="Avaliação do Jogo" max="10" min="0" required>
+      <button type="submit"><span>Enviar</span><span>Tem certeza?</span></button>
+    </form>
+    <div>
+      <h2>Jogos Inseridos</h2>
+      <ul id="gameslist">
+        <p>A lista está vazia '-'</p>
+      </ul>
+  </div>
+  </main>
+
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
