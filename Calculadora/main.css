@@ -1,124 +1,76 @@
 body{
-    background-color: aliceblue;
-    font-family: Arial, Helvetica, sans-serif;
-}
-header h1{
-    text-align: center;
-    font-size: 4em;
-}
-header img{
-    width: 3em;
-    height: 3em;
-    position: absolute;
-    top: 1em;
-    left: 5em;
-    transition-duration: 0.3s;
-}
-header a{
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: rgb(20, 20, 20);
-    border: none;
-    font-weight: 600;
     display: flex;
-    align-items: center;
     justify-content: center;
-    box-shadow: 0px 0px 0px 4px rgba(180, 160, 255, 0.253);
-    cursor: pointer;
-    transition-duration: 0.3s;
-    overflow: hidden;
-    position:absolute;
-    left: 58em;
-    top: 12em;
-  }
-  
-  
-  header a:hover {
-    width: 180px;
-    left: 54em;
-    border-radius: 50px;
-    transition-duration: 0.3s;
-    background-color: rgb(0, 0, 0);
     align-items: center;
-  }
-  
-  header a:hover img {
-    /* width: 20px; */
-    transition-duration: 0.3s;
-    left: 0.5em;
-    top: 0;
-  }
-  
-  header a::before {
-    position: absolute;
-    left: 6em;
-    bottom: -20px;
-    content: "Dark Mode";
-    color: white;
-    /* transition-duration: .3s; */
-    font-size: 0px;
-  }
-  
-  header a:hover::before {
-    font-size: 13px;
-    opacity: 1;
-    bottom: unset;
-    /* transform: translateY(-30px); */
-    transition-duration: 0.3s;
-  }
-  
-main ul li{
-    list-style-type: none;
-}
-#calculadora{
-    background-color: white;
-    width: 18em;
-    height: 24em;
-    border-radius: 10px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-}
-#numb-ope{
-    position: absolute;
-    bottom: 1.2em;
-    left: 1.4em;
-}
-#result{
-    border: 1px solid lightgray;
-    height: 2em;
-    font-size: 2.7em;
-    position: absolute;
-    top: 0.7em;
-    left: 0.5em;
-    border-radius: 10px;
-    width: 5.5em;
-    text-align: right;
-}
-#result:focus{
-    outline: none;
-}
-#numb-ope button{
-    height: 2.6em;
-    width: 3.8em;
-    background-color: white;
-    border-radius: 5px;
-    border: 1px solid lightgray;
-    font-weight: bold;
-}
-#numb-ope button:hover{
+    height: 60em;
     background-color: lightgray;
-    border: 1px solid lightslategray;
-    
 }
-#numb-ope div{
-    font-size: 2em;
+#calculator {
+    width: 300px;
+    background: #222;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Display da calculadora */
+#num_display {
+    display: block;
+    width: 95%;
+    height: 60px;
+    background: #333;
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Layout dos botões */
+.buttons {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 14px;
-    grid-template-rows: auto;
-    row-gap: 10px;
-    margin-top: 0.3em;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+/* Estilo geral dos botões */
+.btn {
+    background: #444;
+    color: white;
+    font-size: 1.5rem;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+/* Estilização dos botões numéricos */
+.numbers {
+    background: #555;
+}
+
+/* Operadores com destaque */
+.operator {
+    background: #ff9800;
+}
+
+/* Botão de igual */
+.equals {
+    background: #4caf50;
+    grid-column: span 2;
+}
+
+/* Efeito de hover nos botões */
+.btn:hover {
+    filter: brightness(1.2);
+}
+
+/* Efeito ao clicar */
+.btn:active {
+    transform: scale(0.95);
 }

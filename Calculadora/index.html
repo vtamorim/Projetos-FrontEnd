@@ -1,56 +1,38 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Online</title>
+    <title>Calculadora</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <h1>Calculadora Online</h1>
-        <a href="#"><img src="dark_mode_24dp_FFFFFF_FILL0_wght400_GRAD0_opsz24.png" alt=""></a>
-    </header>
-    <main>
-        <div id="calculadora">
-            <div>
-                <span></span>
-                <input type="text" id="result">
-            </div>
-            <div id="numb-ope">
-                    <div> 
-                        <button class="button-num-clicker">C</button>
-                        <button class="button-num-clicker">x²</button>
-                        <button class="button-num-clicker">%</button>
-                        <button class="button-num-clicker">/</button>
-                    </div>
-                    <div>
-                        <button class="button-num-clicker">7</button>
-                        <button class="button-num-clicker">8</button>
-                        <button class="button-num-clicker">9</button>
-                        <button class="button-num-clicker">X</button>
-                    </div>
-                    <div>
-                        <button class="button-num-clicker">4</button>
-                        <button class="button-num-clicker">5</button>
-                        <button class="button-num-clicker">6</button>
-                        <button class="button-num-clicker"> - </button>
-                    </div>
-                    <div>
-                        <button class="button-num-clicker">1</button>
-                        <button class="button-num-clicker">2</button>
-                        <button class="button-num-clicker">3</button>
-                        <button class="button-num-clicker">+</button>    
-                    </div>
-                    <div>
-                        <button class="button-num-clicker">0</button>
-                        <button class="button-num-clicker">.</button>
-                        <button class="button-num-clicker">( )</button>
-                        <button id="equal">=</button>
-                    </div>
-            </div>
+    <div id="calculator">
+        <span style="color: white;display: flex; justify-content: end; margin-bottom: 2px;"></span>
+        <span id="num_display"></span>
+        <div class="buttons">
+          <button class="btn numbers" value="7">7</button>
+          <button class="btn numbers" value="8">8</button>
+          <button class="btn numbers" value="9">9</button>
+          <button class="btn operator">/</button>
+      
+          <button class="btn numbers" value="4">4</button>
+          <button class="btn numbers" value="5">5</button>
+          <button class="btn numbers" value="6">6</button>
+          <button class="btn operator">*</button>
+      
+          <button class="btn numbers" value="1">1</button>
+          <button class="btn numbers" value="2">2</button>
+          <button class="btn numbers" value="3">3</button>
+          <button class="btn operator" id="menus">-</button>
+      
+          <button class="btn" value="0">0</button>
+          <button class="btn" id="floater">.</button>
+          <button class="btn equals" id="equals">=</button>
+          <button class="btn operator" id="mais">+</button>
+          <button class="btn operator" id="clear">C</button>
         </div>
-    </main>
+      </div>
     <script src="calcu.js"></script>
 </body>
 </html>

@@ -1,8 +1,16 @@
-document.addEventListener("DOMContentLoaded",function(){
-    const buttons  = document.querySelectorAll("button");
-    buttons.forEach(function(button){
-        button.addEventListener("click",function(){
-            console.log(parseInt(buttons.value))
-        })
-    })
+
+num_display = document.getElementById("num_display")
+
+
+document.querySelectorAll(".btn").forEach(button => {
+    button.addEventListener("click", () => {
+        num_display.textContent += button.value
+
+    });
+
+
+  });
+document.getElementById("clear").addEventListener("click", () => {
+    num_display.textContent  =""
 })
+
