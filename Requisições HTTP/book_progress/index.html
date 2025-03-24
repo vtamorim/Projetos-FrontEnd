@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+    <h1>Lista de Leitura</h1>
+  </header>
+  <main>
+    <h2>Progresso de Leitura</h2>
+    <form id="book_form">
+      <input type="text" placeholder="Nome do Livro">
+
+      <input type="number" placeholder="Páginas ao Total">
+
+      <input type="number" placeholder="Páginas Lidas">
+      <div>
+
+        <input type="radio" id="aband" name="situ" value="Parou de Ler">
+        <label for="aband">Parou de Ler</label><br>
+
+        <input type="radio" id="lendo" name="situ" value="Ainda Lendo">
+        <label for="lendo">Ainda Lendo</label><br>
+
+        <input type="radio" id="lido" name="situ" value="Acabou de Ler">
+        <label for="lido">Acabou de Ler</label><br>
+
+        
+    </div>
+    <button type="submit">Enviar</button>
+    </form>
+    <h3>Livros Registrados</h3>
+    <ul></ul>
+  </main>
+  </body>
+</html>
