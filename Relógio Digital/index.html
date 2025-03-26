@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relógio Digital</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <header>
+        <h1>Relógio Digital</h1>
+        <img src="https://cdn-icons-png.flaticon.com/512/2997/2997985.png" alt="">
+</header>
+<main>
+    <div>
+        <span id="hour">00</span>
+        <span>:</span>
+        <span id="minutes">00</span>
+        <span>:</span>
+        <span id="seconds">00</span>
+   </div>
+   <div>
+    <input type="number" placeholder="Horas" id="input_horas">
+    <input type="number" placeholder="Minutos" id="input_minutos">
+    <input type="number" placeholder="Segundos" id="input_segundos" max="59">
+</div>
+<button type="submit" id="button">Enviar</button>
+</main>
+
+    <script src="clocker.js"></script>
+</body>
+</html>

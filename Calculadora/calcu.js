@@ -1,6 +1,6 @@
 
 num_display = document.getElementById("num_display")
-
+floater_cond = false
 span_sec = document.getElementById("span_sec")
 condition = ""
 document.querySelectorAll(".btn").forEach(button => {
@@ -19,6 +19,9 @@ document.getElementById("clear").addEventListener("click", () => {
     }
     else if(clear_cond == 2){
         span_sec.textContent = ""
+    }
+    else if(clear_cond > 2){
+        clear_cond = 0
     }
 
 })
@@ -39,7 +42,12 @@ document.getElementById("multi").addEventListener("click", () => {
     condition = "multiplicação"
 })
 
-
+document.getElementById("floater").addEventListener("click", () => {
+    if(!num_display.textContent == "")
+    {
+        floater_cond = true
+    }
+})
 
 document.querySelectorAll(".operator").forEach(button => {
     button.addEventListener("click", () => {
