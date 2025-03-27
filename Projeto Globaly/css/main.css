@@ -4,6 +4,30 @@
     font-family: 'Merri';
     src: url('../fonts/font_merri.ttf');
 }
+@keyframes opacity {
+    0%{ opacity: 0;}
+    25%{ opacity: 0.2;}
+    50%{ opacity: 0.5;}
+    75%{ opacity: 0.7;}
+    100%{ opacity: 1;}
+}
+@keyframes botten {
+    0%{ 
+        top: 4em;
+    }
+    25%{
+        top: 3em;
+    }
+    50%{
+        top: 2em;
+    }
+    75%{
+        top: 1em;
+    }
+    100%{
+        top: 0em;
+    }
+}
 *{
     margin: 0;
     padding: 0;
@@ -99,17 +123,40 @@ header>form>button{
 header>form>button>img{
     height: 1.5em;
 }
+body>button{
+    position: relative;
+    top: 15em;
+}
+#section_body h2{
+    text-align: center;
+}
 #section_body{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     height: 53em;
     width: 100%;
     background-image: url(../images/thumb1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+    animation: opacity 0.5s;
+}
+#section_body>div:nth-child(1){
+    display: flex;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+}
+#section_body>div>div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: botten 0.4s;
+
 }
 #title_section{
     font-size: 4.7em;
@@ -120,7 +167,7 @@ header>form>button>img{
     margin-top: 1em;
     text-align: center;
 }
-#section_body button{
+#section_body>div>div>button{
     border: none;
     background-color: var(--cor-principal);
     width: var(--width--button);
@@ -132,7 +179,42 @@ header>form>button>img{
     color: white;
     transition: background-color 0.2s ease-in;
 }
-#section_body button:hover{
+
+#fiseta_button{
+    border: none;
+    width: 5em;
+    height: 5em;
+    font-weight: 800;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image : url(../images/seta_left_white.svg);
+    background-size: 25px 25px;
+    background-position: 55% 50%;
+
+    background-color: var(--cor-principal);
+    color: white;
+}
+#secseta_button{
+    border: none;
+
+    width: 5em;
+    height: 5em;
+    font-weight: 800;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-image : url(../images/seta_right_white.svg);
+    background-size: 25px 25px;
+    background-position: center;
+    background-color: var(--cor-principal);
+    color: white;
+}
+#fiseta_button,#secseta_button{
+    transition: background-color 0.2s ease-in;
+}
+#fiseta_button:hover,#secseta_button:hover{
+    background-color: white;
+}
+#section_body>div>div>button:hover{
     background-color: white;
     color: var(--footer-color);
 }
