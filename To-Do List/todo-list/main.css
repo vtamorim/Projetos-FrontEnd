@@ -65,3 +65,60 @@ div>button{
     font-size: 2em;
     position: relative;
 }
+ul{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#buttonli{
+    background-image: url(./delete_24dp_EA33F7_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 4em;
+    height: 4em;
+    border: none;
+    transition: transform 0.2s ease-in;
+}
+
+#buttonli:hover{
+    transform: scale(1.2);
+}
+#sebutli{
+    background-image: url(./edit_24dp_5985E1_FILL0_wght400_GRAD0_opsz24.svg);
+    background-size: 20px 20px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    background-color: transparent;
+    width: 4em;
+    height: 4em;
+    border: none;
+    transition: transform 0.2s ease-in;
+}
+
+#sebutli:hover{
+    transform: scale(1.2);
+}
+
+ul>li{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul>li>span{
+    width: 95%;
+    border:1px solid white;
+    border-radius: 10px;
+    height: 3em;
+    display: flex;
+    align-items: center;
+    padding-left: 2em;
+    box-sizing: content-box,border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
