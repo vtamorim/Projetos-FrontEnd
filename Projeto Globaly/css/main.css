@@ -140,8 +140,12 @@ body>button{
     background-repeat: no-repeat;
     background-size: cover;
     color: white;
+}
+.animate{
     animation: opacity 0.5s;
 }
+
+
 #section_body>div:nth-child(1){
     display: flex;
     width: 95%;
@@ -155,9 +159,15 @@ body>button{
     align-items: center;
     justify-content: center;
     position: relative;
-    animation: botten 0.4s;
 
 }
+.secon_animate{
+    animation: botten 0.4s;
+}
+
+
+
+
 #title_section{
     font-size: 4.7em;
 }

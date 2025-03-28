@@ -48,7 +48,6 @@ second_button.addEventListener("click", () => {
     if (contador >=3){
         contador = 0
     }
-
 })
 
 first_button.addEventListener("click", () => {
@@ -60,6 +59,33 @@ first_button.addEventListener("click", () => {
 })
 
 
+
+first_button.onclick =() =>{
+    section_body.classList.remove("animate");
+    void section_body.offsetWidth;
+    section_body.classList.add("animate");
+
+
+    first_box.classList.remove("secon_animate")
+    void first_box.offsetWidth;
+    first_box.classList.add("secon_animate")
+}
+
+
+second_button.onclick =() =>{
+  section_body.classList.remove("animate");
+  void section_body.offsetWidth;
+  section_body.classList.add("animate");
+
+  first_box.classList.remove("secon_animate")
+  void first_box.offsetWidth;
+  first_box.classList.add("secon_animate")
+}
+
+
+
+
+
 first_button.addEventListener("mouseenter", () => {
   first_button.style.backgroundColor = "white";
   first_button.style.backgroundImage = 'url(../images/seta_left_black.svg)'
@@ -69,6 +95,12 @@ first_button.addEventListener("mouseleave", () => {
   first_button.style.backgroundColor = "#35BDC3";
   first_button.style.backgroundImage =  'url(../images/seta_left_white.svg)'
 });
+
+
+
+
+
+
 
 second_button.addEventListener("mouseenter", () => {
   second_button.style.backgroundColor = "white";
