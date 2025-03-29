@@ -1,28 +1,72 @@
 *{
-    margin: 0;
+    margin:  0;
     padding: 0;
 }
-body{
-    height: 100vh;
+
+header{
+    background-color: rgb(0, 0, 36);
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(6, 0, 17);
-}
-span{
-    background-color: transparent;
-    border: 1px solid white;
-    height: 3em;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     color: white;
-    font-weight: bold;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 15px;
+    box-sizing: border-box;
+    justify-content:space-evenly;
 }
-@media only screen and (max-width: 320px) {
-    body{
-        background-color: pink;
+header figure img{
+    width: 12em;
+}
+header>nav>ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 25em ;
+}
+main{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr 1fr ;
+    place-items: center;
+    gap: 50px;
+    padding-top: 8em;
+}
+main>div{
+    height: 15em;
+    width: 25%;
+    color: white;
+    border-radius: 15px;
+    background-color: rgb(0, 0, 36);
+    padding: 15px;
+    
+}
+@media only screen and (max-width: 1440px) {
+    p{
+        font-size: 0.9em;
     }
 }
+@media only screen and (max-width: 1024px) {
+    h1{
+        font-size: 1.5em;
+    }
+    p{
+        margin-top: 5%;
+        font-size: 1em;
+    }
+    main>div{
+        width: 35%;
+    }
+}
+@media only screen and (max-width: 768px) {
+    p{
+        margin-top: 3em;
+        font-size: 0.8em;
+    }
+    main>div{
+        width: 45%;
+    }
+
+  }
+@media only screen and (max-width: 425px) {
+
+  }

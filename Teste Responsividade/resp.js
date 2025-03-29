@@ -1,9 +1,10 @@
-textin = document.getElementById("textin")
+const textin = document.getElementById("textin")
 
+const logotipo =  document.getElementById("logotipo")
 
-if(window.matchMedia("(max-width: 320px)").matches){
-    textin.textContent = "Eu gosto de 💻"   
-}
-else{
-    textin.textContent = "Eu gosto de Computador"
-}
+window.addEventListener("resize", () => {
+    if ( window.innerWidth == 425){
+    logotipo.src = "Subtract.svg"
+    
+} 
+  });
