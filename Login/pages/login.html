@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MyJourney</title>
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=person" />
+    <link rel="stylesheet" href="../css/base.css">
 </head>
 <body>
     <header>
@@ -24,23 +24,26 @@
         <button type="button">Entrar</button>
     </header>
     <main>
+        <div>
+            <hr>
+                <figure>
+                    <img src="../images/user (1).png" alt="person icon">
+                </figure>
+            <hr>
+        </div>
         <form action="#">
-            <h2>Cadastro</h2>
+            <input type="text" placeholder="Nome de Usuário" required>
+            <br>
+            <input type="password" placeholder="Senha" required>
             <div>
-            <div>
-                <span class="material-symbols-outlined" style="color: #C62300;">person</span>
-            </div>
-            <input type="text">
-            </div>
-                <br>
-            <div>
-            <input type="password">
+                <input type="checkbox" value="forgot" id="forgot">
+                <label for="forgot">Manter Login</label>
+                <a href="#">Esqueceu a Senha?</a>
             </div>
             <button type="submit">Cadastrar</button>
         </form>
     </main>
     <footer>
-        sla
     </footer>
 </body>
 </html>
