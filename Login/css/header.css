@@ -1,0 +1,43 @@
+@font-face {
+    font-family: 'exo2';
+    src: url(../Exo_2/Exo2-VariableFont_wght.ttf);
+}
+
+*{
+    font-family: 'exo2';
+    margin: 0;
+    padding: 0;
+}
+header{
+    height: 5em;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    align-items: center;
+    & ul{
+        list-style-type: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 60vh;
+        height: 5em;
+
+        & li{
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            align-items: center;
+            transition: background-color 0.2s ease-in;
+
+            & a{
+                color: black;
+                text-decoration: none;
+            }
+        }
+        & li:hover{
+            background-color: var(--marca-one);
+        }
+    }
+    
+}   
