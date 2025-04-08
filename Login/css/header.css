@@ -8,19 +8,23 @@
     margin: 0;
     padding: 0;
 }
+
 header{
     height: 5em;
     display: flex;
+
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    & ul{
+    background-color: var(--cor-principal);
+   &    ul{
         list-style-type: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 60vh;
         height: 5em;
+
 
         & li{
             display: flex;
@@ -31,13 +35,93 @@ header{
             transition: background-color 0.2s ease-in;
 
             & a{
-                color: black;
+                color: white;
                 text-decoration: none;
             }
         }
         & li:hover{
             background-color: var(--marca-one);
-        }
+            cursor: pointer;
+        }   
     }
     
+
+    & button{
+        height: 3.5em;
+        width: 13em;
+        border-radius: 5em;
+        border: 0;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+        font-weight: bold;
+    }
+    & button:hover{
+        background-color: var(--marca-one);
+        color: white;
+    }
 }   
+
+#section_body{
+    background-image: url(../images/background.png);
+    width: 100%;
+    height: 95vh;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    & h2{
+        font-size: 4.3em;
+    }
+    & button{
+        width: 13em;
+        height: 3.5em;
+        border-radius: 5em;
+        border: 0;
+        position: relative;
+        top: 15%;
+        transition: background-color 0.2s ease-in, color 0.2s ease-in;
+        font-weight: bold;
+    }
+    & button:hover{
+        background-color: var(--marca-one);
+        color: white;
+    }
+
+
+    & p{
+        width: 60%;
+        text-align: center;
+    }
+}
+
+main{
+    background-color: var(--cor-fundo);
+}
+.file_here{
+    background-color: var(--marca-one);
+}
+
+main section:nth-child(1){
+    display: flex;
+    padding-top: 5%;
+    flex-wrap: wrap;
+    color: white;
+    max-width: 100%;
+}
+main section:nth-child(1) ul{
+    text-align: left;
+    flex-grow: 0.1;
+    margin: auto;
+}
+
+.grande{
+    flex-grow: 1;
+    flex-basis: 100%;
+    text-align: center;
+    font-size: 3.3em;
+}
+.menor{
+    text-align: center;
+    flex-grow: 1;
+}
