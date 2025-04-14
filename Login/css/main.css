@@ -1,21 +1,7 @@
-@keyframes opacity {
-    25%{
-        opacity: 0.8;
-    }
-    50%{
-        opacity: 0.6;
-    }
-    75%{
-        opacity: 0.4;
-    }
-    100%{
-        opacity: 0.2;
-    }
-}
 
 
 #section_body{
-    background-image: url(../images/background.png);
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -139,13 +125,6 @@ main section:nth-child(2){
     text-align: center;
 
 }
-.card {
-    transition: opacity 0.25s ease;
-  }
-  
-  .dim {
-    opacity: 0.5;
-  }
 
 
 #progress{

@@ -13,11 +13,11 @@
   <main>
     <h2>Progresso de Leitura</h2>
     <form id="book_form">
-      <input type="text" placeholder="Nome do Livro">
+      <input type="text" placeholder="Nome do Livro" id="namebook">
 
-      <input type="number" placeholder="Páginas ao Total">
+      <input type="number" placeholder="Páginas ao Total" id="pages_total">
 
-      <input type="number" placeholder="Páginas Lidas">
+      <input type="number" placeholder="Páginas Lidas" id="pages_read">
       <div>
 
         <input type="radio" id="aband" name="situ" value="Parou de Ler">
@@ -31,10 +31,13 @@
 
         
     </div>
-    <button type="submit">Enviar</button>
+    <button type="submit" id="button">Enviar</button>
     </form>
     <h3>Livros Registrados</h3>
     <ul></ul>
   </main>
+
+
+  <script src="main.js"></script>
   </body>
 </html>

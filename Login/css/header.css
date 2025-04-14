@@ -8,7 +8,11 @@
     margin: 0;
     padding: 0;
 }
-
+body{
+    background-image: url(../images/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 header{
     height: 5em;
     display: flex;
@@ -16,7 +20,7 @@ header{
     justify-content: space-around;
     width: 100%;
     align-items: center;
-    background-color: var(--cor-principal);
+    background-color: rgba(0, 0, 0,0.1)  /*var(--cor-principal)*/;
    &    ul{
         list-style-type: none;
         display: flex;
