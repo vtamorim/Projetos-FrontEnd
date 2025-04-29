@@ -13,28 +13,14 @@
   <main>
     <h2>Progresso de Leitura</h2>
     <form id="book_form">
-      <input type="text" placeholder="Nome do Livro" id="namebook">
+      <input type="text" placeholder="Nome do Livro" id="namebook" required>
 
-      <input type="number" placeholder="Páginas ao Total" id="pages_total">
+      <input type="number" placeholder="Páginas ao Total" id="pages_total" required>
 
-      <input type="number" placeholder="Páginas Lidas" id="pages_read">
-      <div>
-
-        <input type="radio" id="aband" name="situ" value="Parou de Ler">
-        <label for="aband">Parou de Ler</label><br>
-
-        <input type="radio" id="lendo" name="situ" value="Ainda Lendo">
-        <label for="lendo">Ainda Lendo</label><br>
-
-        <input type="radio" id="lido" name="situ" value="Acabou de Ler">
-        <label for="lido">Acabou de Ler</label><br>
-
-        
-    </div>
+      <input type="number" placeholder="Páginas Lidas" id="pages_read" required>
     <button type="submit" id="button">Enviar</button>
     </form>
-    <h3>Livros Registrados</h3>
-    <ul></ul>
+    <div id="livro_info"></div>
   </main>
 
 
