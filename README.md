@@ -7,8 +7,8 @@ Este repositório reúne diversos projetos pessoais desenvolvidos com o objetivo
 - **Gerador de Senhas**
 - **Jokenpo (Pedra, Papel e Tesoura)**
 - **MyJourney**
-- **Projeto Globaly**
-- **Projeto Site**
+- **Recriação Globaly**
+- **Recriação BlueSKY**
 - **Relógio Digital**
 - **Requisições HTTP**
 - **Teste Responsividade**
