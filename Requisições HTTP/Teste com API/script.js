@@ -2,8 +2,9 @@ async function executar(){
     const list_users = document.getElementById('list_users');
     const response = await fetch('https://jsonplaceholder.typicode.com/posts');
 
+    console.log(response)
     const users = await response.json();
-
+    console.log(users)
     users.forEach( function (post) {
         const userselement = document.createElement('li');
     

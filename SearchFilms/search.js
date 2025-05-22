@@ -1,14 +1,17 @@
-input_search = document.getElementById("input_search")
+
 async function executar(){
+    input_search = document.getElementById("input_search")
+
     const response = await fetch('https://www.omdbapi.com/?i=tt3896198&apikey=8de5cc28');
 
     const users = await response.json();
-
-    users.forEach( function (post) {
+    const myarray = Object.entries(users)
+    myarray.forEach( function (post) {
+        console.log(post)
         const userselement = document.createElement('div');
     
         const title = document.createElement("h2");
-        title.textContent = post.t;
+        title.textContent = post;
 
 
         const username = document.createElement("p");
@@ -25,6 +28,8 @@ async function executar(){
 
 
 }
+
+
 
 
 
